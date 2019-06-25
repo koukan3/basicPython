@@ -1,8 +1,9 @@
 import collections
 '''
-1. __*__：双下方法/特殊方法：
-python解释器会使用特殊方法去激活一些基本的对象操作
+1. __*__：双下方法/特殊方法(dunder-method)：
+python解释器会使用特殊方法去激活一些基本的对象操作.
 2.特殊方法的存在是为了让解释器调用，不是让用户调用。
+3.通过实现特殊方法，自定义数据类型可以表现得跟内置类型一样.
 '''
 #namedtuple：创建一个有少量属性但没有方法的对象
 Card = collections.namedtuple("card",['rank','suit'])
@@ -52,6 +53,5 @@ def spades_high(card):
     #print("rank_value: ",rank_value)
     #对纸牌(牌面+花色)进行排序，
     return rank_value * len(suit_values) + suit_values[card.suit]
-#print(fd.spades_high(Card("3","spades")))
 for c in reversed(sorted(fd,key=spades_high)):  #逆序/正序
     print(c)
