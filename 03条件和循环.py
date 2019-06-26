@@ -29,7 +29,7 @@ for i in range(1,101):
 print(sum)
 
 print("============循环中的continue,break==============")
-#range(11): 0~10
+#range(11):0 0~10
 for i in range(11):
     if i%2==0:
         continue

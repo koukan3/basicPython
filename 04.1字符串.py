@@ -29,6 +29,7 @@ print("十六进制整数%x和%x的格式化..."%(11,17))
 print("%%s会把任意类型转成字符串，例如：%s"%True)
 print("{0}的成绩提高了{1:.2f}%".format("xiaoming",17.123))
 #切片(subString)
+str1 = ""
 print(str1[0:3])
 print(str1[-3:])
 print(str1[-1:-4:-1])
@@ -37,7 +38,7 @@ print(str1[:-4:-1])
 print(str1[::-1])
 
 # print("-"*50)
-# print("北京尚学堂".center(50))
+# print("人民大会堂".center(50))
 # print("-"*50)
 
 

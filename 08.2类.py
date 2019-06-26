@@ -38,6 +38,7 @@ class Stu(object):
         print("this is a student...")
 
 class Andy(Stu):
+    @classmethod
     def getInfo(self):
         print("this is a student named Andy...")
 
@@ -49,6 +50,8 @@ class Teacher(object):
     def getInfo(self):
         print("this is a teacher...")
 
+Andy.getInfo()   #类函数，可以直接用类名调用
+Tom("tom",10,"male").getInfo()  #不能直接用类名调用
 
 class Dict(dict):
     def __init__(self,**kv):

@@ -4,6 +4,8 @@ import collections
 python解释器会使用特殊方法去激活一些基本的对象操作.
 2.特殊方法的存在是为了让解释器调用，不是让用户调用。
 3.通过实现特殊方法，自定义数据类型可以表现得跟内置类型一样.
+4.“Data Model”（https://docs.python.org/3/reference/datamodel.html）
+在特殊方法中，有近一半的方法是用于实现算术运算、位运算和比较操作。
 '''
 #namedtuple：创建一个有少量属性但没有方法的对象
 Card = collections.namedtuple("card",['rank','suit'])
