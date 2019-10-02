@@ -23,7 +23,8 @@ class City:
         self.name=name
         self.code=code
 t = ("北京",1001)
-c = City(*t)   #拆包，作为参数
+#拆包，作为参数
+c = City(*t)
 print(c.name,c.code)
 a,b,*rest,d=range(6)
 print("a=%r,b=%r,rest=%r,d=%r"%(a,b,rest,d))

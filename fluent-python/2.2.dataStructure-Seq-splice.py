@@ -21,15 +21,26 @@ print(str[2:None]) # 截取到最后一个
 print(str[None:]) #从第一个开始截取
 print("========== 切片对象 slice ：有名字的切片=========")
 invoice = "1909  abc $17.50 3 $52.50"
-SKU = slice(0,6)
+SKU = slice(0,6)  # type(SKU) = <class 'slice'>
 DESC = slice(6,9)
 PRICE = slice(9,16)
 print(invoice[SKU],invoice[DESC],invoice[PRICE])
 print("========== 切片赋值:占据指定区间的位置。 ==========")
 mylist = list(range(10))
 print(mylist)
+#update
 mylist[2:4]=[100,100,100]  #赋值等式的右侧必须是可迭代对象。
 print("赋值之后：",mylist)
-del mylist[2:5]
+#delete
+del mylist[2:5]  #index
 print("删除指定区间后：",mylist)
-
+mylist.remove(100) #element
+print("删除指定的元素后：",mylist)
+#add
+#mylist.append(ele)
+#mylist.extend([ele,ele])
+#mylist.insert(idx,ele)
+#retrieve
+#mylist.index(ele)
+#mylist.index(ele,start,end)
+#slice
